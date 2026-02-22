@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>ZerofyDrive - Home</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+
+<body class='min-h-screen bg-slate-950 text-white overflow-x-hidden'>
+  <!-- Background Glow -->
+  <div class='pointer-events-none fixed inset-0'>
+    <div class='absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-600/25 blur-3xl'></div>
+    <div class='absolute top-10 right-[-180px] h-[520px] w-[520px] rounded-full bg-cyan-400/20 blur-3xl'></div>
+    <div class='absolute bottom-[-220px] left-1/4 h-[640px] w-[640px] rounded-full bg-emerald-500/10 blur-3xl'></div>
+  </div>
+
+  <div class='relative mx-auto max-w-6xl px-4 py-6'>
+    <div class='rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-xl'>
+      <!-- Navbar -->
+      <header class='flex items-center justify-between gap-3 px-4 py-4 sm:px-6 md:px-10'>
+        <!-- Logo -->
+        <div class='flex items-center gap-3 min-w-0'>
+          <div class='relative h-10 w-10 shrink-0'>
+            <div class='absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 opacity-90'></div>
+            <div class='absolute inset-[2px] rounded-2xl bg-slate-950/60'></div>
+            <svg class='absolute inset-0 m-auto' width='26' height='26' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z' stroke='white' stroke-width='1.8' />
+              <path d='M8.5 12.2l2.2 2.2 4.8-5' stroke='#22c55e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' />
+            </svg>
+          </div>
+
+          <div class='text-lg font-semibold tracking-tight truncate'>
+            <span class='text-cyan-300'>Zerofy</span><span class='text-white'>Drive</span>
+          </div>
+        </div>
+
+        <!-- Desktop Links -->
+        <nav class='hidden md:flex items-center gap-8 text-sm text-white/80'>
+          <a class='hover:text-white transition' href='#features'>Features</a>
+          <a class='hover:text-white transition' href='#pricing'>Pricing</a>
+          <a class='hover:text-white transition' href='#security'>Security</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class='flex items-center gap-2 sm:gap-3 shrink-0'>
+          <a href='#login' class='rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition'>
+            Login
+          </a>
+          <a href='#signup' class='rounded-full bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-emerald-300 transition'>
+            Sign Up
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class='px-4 pb-7 pt-4 sm:px-6 md:px-10 md:pb-9 md:pt-6'>
+        <div class='grid items-center gap-10 lg:grid-cols-2'>
+          <!-- Left -->
+          <div class='order-2 lg:order-1'>
+            <h1 class='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight'>
+              Secure Cloud<br />
+              Storage <span class='text-emerald-400'>Made</span><br />
+              <span class='text-emerald-400'>Simple</span>
+            </h1>
+
+            <p class='mt-4 sm:mt-5 max-w-xl text-sm sm:text-base leading-relaxed text-white/70'>
+              Store, share, and access your files with zero hassle and just privacy.
+              Fast uploads, clean UI, and encrypted storage that feels effortless.
+            </p>
+
+            <div class='mt-6 sm:mt-7 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4'>
+              <a href='#get-started' class='w-full sm:w-auto text-center rounded-full bg-emerald-400 px-7 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-300 transition'>
+                Get Started
+              </a>
+
+              <a href='#watch-demo' class='w-full sm:w-auto group flex justify-center sm:justify-start items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition'>
+                <span class='grid h-7 w-7 place-items-center rounded-full bg-white/10 border border-white/15'>
+                  <svg class='ml-[1px]' width='14' height='14' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M9 7l10 5-10 5V7z' fill='white' />
+                  </svg>
+                </span>
+                Watch Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Visual (responsive scaling) -->
+          <div class='order-1 lg:order-2'>
+            <div class='relative mx-auto w-full max-w-md sm:max-w-lg lg:max-w-xl'>
+              <!-- Floating dots -->
+              <div class='absolute -top-4 left-10 h-2 w-2 rounded-full bg-cyan-300/70 shadow-[0_0_25px_rgba(34,211,238,0.6)]'></div>
+              <div class='absolute top-16 right-10 h-2 w-2 rounded-full bg-blue-400/70 shadow-[0_0_25px_rgba(96,165,250,0.5)]'></div>
+              <div class='absolute bottom-20 left-4 h-2 w-2 rounded-full bg-emerald-400/70 shadow-[0_0_25px_rgba(52,211,153,0.5)]'></div>
+
+              <!-- Cloud + Shield -->
+              <div class='absolute -top-10 left-1/2 -translate-x-1/2 scale-90 sm:scale-100'>
+                <div class='relative grid place-items-center'>
+                  <div class='h-24 w-40 rounded-full bg-cyan-400/15 blur-2xl'></div>
+                  <div class='absolute flex items-center gap-3 rounded-3xl border border-white/15 bg-white/10 px-5 py-3 backdrop-blur'>
+                    <div class='grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600'>
+                      <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z' stroke='white' stroke-width='1.7' />
+                        <path d='M8.5 12.2l2.2 2.2 4.8-5' stroke='#22c55e' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class='text-sm font-semibold'>Encrypted Cloud</div>
+                      <div class='text-xs text-white/70'>Protected storage</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Platform Base -->
+              <div class='mt-10 rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-4 sm:p-6 shadow-[0_20px_70px_rgba(0,0,0,0.55)]'>
+                <div class='relative rounded-2xl bg-slate-950/40 p-4 sm:p-6 border border-white/10'>
+                  <div class='grid grid-cols-3 items-end gap-3 sm:gap-4'>
+                    <!-- Tablet -->
+                    <div>
+                      <div class='h-28 sm:h-36 rounded-2xl border border-white/15 bg-white/5 shadow-lg'>
+                        <div class='h-full rounded-2xl bg-gradient-to-b from-cyan-400/10 to-blue-600/10 p-2 sm:p-3'>
+                          <div class='h-3 w-10 rounded-full bg-white/10'></div>
+                          <div class='mt-4 sm:mt-5 space-y-2'>
+                            <div class='h-3 w-20 rounded bg-white/10'></div>
+                            <div class='h-3 w-16 rounded bg-white/10'></div>
+                            <div class='h-10 sm:h-14 w-full rounded-xl bg-white/5 border border-white/10'></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Laptop -->
+                    <div class='-mb-1'>
+                      <div class='h-36 sm:h-44 rounded-2xl border border-white/15 bg-white/5 shadow-2xl'>
+                        <div class='h-full rounded-2xl bg-gradient-to-b from-blue-500/15 to-cyan-300/10 p-2 sm:p-3'>
+                          <div class='flex items-center justify-between'>
+                            <div class='h-3 w-12 rounded bg-white/10'></div>
+                            <div class='h-3 w-8 rounded bg-white/10'></div>
+                          </div>
+                          <div class='mt-3 sm:mt-4 grid gap-2'>
+                            <div class='h-16 sm:h-20 rounded-xl bg-white/5 border border-white/10'></div>
+                            <div class='grid grid-cols-3 gap-2'>
+                              <div class='h-8 sm:h-10 rounded-xl bg-white/5 border border-white/10'></div>
+                              <div class='h-8 sm:h-10 rounded-xl bg-white/5 border border-white/10'></div>
+                              <div class='h-8 sm:h-10 rounded-xl bg-white/5 border border-white/10'></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='mx-auto mt-2 h-4 w-24 sm:w-32 rounded-full bg-white/10 border border-white/10'></div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class='flex justify-end'>
+                      <div class='h-32 sm:h-40 w-20 sm:w-24 rounded-3xl border border-white/15 bg-white/5 shadow-lg'>
+                        <div class='h-full rounded-3xl bg-gradient-to-b from-emerald-400/10 to-cyan-400/10 p-2'>
+                          <div class='mx-auto mt-1 h-1.5 w-10 rounded-full bg-white/15'></div>
+                          <div class='mt-3 sm:mt-4 space-y-2'>
+                            <div class='h-3 w-14 sm:w-16 rounded bg-white/10'></div>
+                            <div class='h-10 sm:h-14 rounded-2xl bg-white/5 border border-white/10'></div>
+                            <div class='h-8 sm:h-10 rounded-2xl bg-white/5 border border-white/10'></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='mt-5 sm:mt-6 h-1.5 w-full rounded-full bg-gradient-to-r from-cyan-400/40 via-blue-500/30 to-emerald-400/40'></div>
+                </div>
+              </div>
+
+              <div class='pointer-events-none absolute -bottom-6 left-0 right-0 mx-auto h-20 sm:h-24 w-[92%] rounded-[40px] bg-white/5 blur-xl'></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features Bar -->
+        <div id='features' class='mt-8 sm:mt-10 rounded-2xl border border-white/10 bg-white/5 px-4 py-5 sm:px-6 md:px-10'>
+          <div class='grid gap-6 md:grid-cols-3'>
+            <div class='flex items-center gap-4'>
+              <div class='grid h-12 w-12 place-items-center rounded-2xl border border-cyan-300/20 bg-cyan-400/10 shrink-0'>
+                <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M12 6l7 4-7 4-7-4 7-4z' stroke='white' stroke-width='1.6'/>
+                  <path d='M5 14l7 4 7-4' stroke='#22c55e' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+                </svg>
+              </div>
+              <div>
+                <div class='font-semibold'>Free 10GB Storage</div>
+                <div class='text-sm text-white/70'>Start instantly with bonus space.</div>
+              </div>
+            </div>
+
+            <div class='flex items-center gap-4'>
+              <div class='grid h-12 w-12 place-items-center rounded-2xl border border-blue-300/20 bg-blue-400/10 shrink-0'>
+                <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z' stroke='white' stroke-width='1.6'/>
+                  <path d='M9 12l2 2 4-4' stroke='#22c55e' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+                </svg>
+              </div>
+              <div>
+                <div class='font-semibold'>End-to-End Encryption</div>
+                <div class='text-sm text-white/70'>Privacy-first file protection.</div>
+              </div>
+            </div>
+
+            <div class='flex items-center gap-4'>
+              <div class='grid h-12 w-12 place-items-center rounded-2xl border border-emerald-300/20 bg-emerald-400/10 shrink-0'>
+                <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M12 12a5 5 0 100-10 5 5 0 000 10z' stroke='white' stroke-width='1.6'/>
+                  <path d='M3 22c1.5-4 5-6 9-6s7.5 2 9 6' stroke='#22c55e' stroke-width='1.6' stroke-linecap='round'/>
+                </svg>
+              </div>
+              <div>
+                <div class='font-semibold'>Access Anywhere</div>
+                <div class='text-sm text-white/70'>Mobile, laptop, tablet, all synced.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+    </div>
+<!-- FEATURES SECTION -->
+<section id='features' class='mt-20 px-4 sm:px-6 md:px-10'>
+  <div class='text-center mb-12'>
+    <h2 class='text-3xl sm:text-4xl font-bold'>Powerful Features</h2>
+    <p class='mt-3 text-white/70 max-w-2xl mx-auto'>
+      Everything you need to store, manage and share your files securely in one place.
+    </p>
+  </div>
+
+  <div class='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
+
+    <!-- Feature 1 -->
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl'>
+      <div class='h-12 w-12 rounded-2xl bg-cyan-400/20 flex items-center justify-center mb-4'>
+        📁
+      </div>
+      <h3 class='text-lg font-semibold'>Smart File Management</h3>
+      <p class='mt-2 text-sm text-white/70'>
+        Organize files with folders, tags, and quick search. Manage everything effortlessly.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl'>
+      <div class='h-12 w-12 rounded-2xl bg-blue-400/20 flex items-center justify-center mb-4'>
+        ⚡
+      </div>
+      <h3 class='text-lg font-semibold'>High-Speed Upload</h3>
+      <p class='mt-2 text-sm text-white/70'>
+        Experience lightning-fast uploads and downloads without interruptions.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl'>
+      <div class='h-12 w-12 rounded-2xl bg-emerald-400/20 flex items-center justify-center mb-4'>
+        🔗
+      </div>
+      <h3 class='text-lg font-semibold'>Secure File Sharing</h3>
+      <p class='mt-2 text-sm text-white/70'>
+        Share files using password-protected and time-limited secure links.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- PRICING SECTION -->
+<section id='pricing' class='mt-24 px-4 sm:px-6 md:px-10'>
+  <div class='text-center mb-12'>
+    <h2 class='text-3xl sm:text-4xl font-bold'>Simple Pricing</h2>
+    <p class='mt-3 text-white/70 max-w-2xl mx-auto'>
+      Choose a plan that fits your storage needs.
+    </p>
+  </div>
+
+  <div class='grid gap-8 md:grid-cols-3'>
+
+    <!-- Free Plan -->
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl'>
+      <h3 class='text-xl font-semibold'>Free</h3>
+      <p class='mt-4 text-3xl font-bold'>₹0</p>
+      <p class='mt-2 text-white/60 text-sm'>10GB Storage</p>
+      <ul class='mt-6 space-y-2 text-sm text-white/70'>
+        <li>✔ Basic Sharing</li>
+        <li>✔ Standard Security</li>
+        <li>✔ Email Support</li>
+      </ul>
+      <button class='mt-6 w-full rounded-2xl bg-white/10 py-2 hover:bg-white/20 transition'>
+        Get Started
+      </button>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class='rounded-3xl border border-emerald-400/40 bg-emerald-400/10 p-8 text-center backdrop-blur-xl'>
+      <h3 class='text-xl font-semibold'>Pro</h3>
+      <p class='mt-4 text-3xl font-bold'>₹199/mo</p>
+      <p class='mt-2 text-white/60 text-sm'>100GB Storage</p>
+      <ul class='mt-6 space-y-2 text-sm text-white/80'>
+        <li>✔ Advanced Sharing</li>
+        <li>✔ Priority Support</li>
+        <li>✔ File Version History</li>
+      </ul>
+      <button class='mt-6 w-full rounded-2xl bg-emerald-400 text-slate-950 py-2 font-semibold hover:bg-emerald-300 transition'>
+        Upgrade Now
+      </button>
+    </div>
+
+    <!-- Business Plan -->
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl'>
+      <h3 class='text-xl font-semibold'>Business</h3>
+      <p class='mt-4 text-3xl font-bold'>₹499/mo</p>
+      <p class='mt-2 text-white/60 text-sm'>1TB Storage</p>
+      <ul class='mt-6 space-y-2 text-sm text-white/70'>
+        <li>✔ Team Collaboration</li>
+        <li>✔ Admin Dashboard</li>
+        <li>✔ Enterprise Security</li>
+      </ul>
+      <button class='mt-6 w-full rounded-2xl bg-white/10 py-2 hover:bg-white/20 transition'>
+        Contact Sales
+      </button>
+    </div>
+
+  </div>
+</section>
+<!-- SECURITY SECTION -->
+<section id='security' class='mt-24 mb-20 px-4 sm:px-6 md:px-10'>
+  <div class='text-center mb-12'>
+    <h2 class='text-3xl sm:text-4xl font-bold'>Enterprise-Level Security</h2>
+    <p class='mt-3 text-white/70 max-w-2xl mx-auto'>
+      Your privacy is our priority. We protect your files with modern encryption standards.
+    </p>
+  </div>
+
+  <div class='grid gap-10 md:grid-cols-2 items-center'>
+
+    <div>
+      <ul class='space-y-6'>
+        <li>
+          <h4 class='font-semibold text-lg'>🔐 End-to-End Encryption</h4>
+          <p class='text-sm text-white/70 mt-1'>
+            Files are encrypted before upload and remain protected during storage and transfer.
+          </p>
+        </li>
+
+        <li>
+          <h4 class='font-semibold text-lg'>🛡 Secure Authentication</h4>
+          <p class='text-sm text-white/70 mt-1'>
+            Multi-layer authentication ensures only authorized users can access accounts.
+          </p>
+        </li>
+
+        <li>
+          <h4 class='font-semibold text-lg'>📊 Activity Monitoring</h4>
+          <p class='text-sm text-white/70 mt-1'>
+            Real-time activity tracking to detect and prevent suspicious access.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class='rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl'>
+      <h3 class='text-xl font-semibold mb-4'>Your Data, Fully Protected</h3>
+      <p class='text-sm text-white/70'>
+        ZerofyDrive uses AES-256 encryption, secure HTTPS connections, and protected storage infrastructure
+        to ensure your data remains safe at all times.
+      </p>
+    </div>
+
+  </div>
+</section>
+    <footer class='mt-6 text-center text-xs text-white/50'>
+      © <span id='year'></span> ZerofyDrive
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

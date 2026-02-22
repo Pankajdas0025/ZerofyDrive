@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>ZerofyDrive - Login</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+
+<body class='min-h-screen bg-slate-950 text-white overflow-x-hidden'>
+  <!-- Background Glow -->
+  <div class='pointer-events-none fixed inset-0'>
+    <div class='absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-600/25 blur-3xl'></div>
+    <div class='absolute top-10 right-[-180px] h-[520px] w-[520px] rounded-full bg-cyan-400/20 blur-3xl'></div>
+    <div class='absolute bottom-[-220px] left-1/4 h-[640px] w-[640px] rounded-full bg-emerald-500/10 blur-3xl'></div>
+  </div>
+
+  <div class='relative mx-auto flex min-h-screen max-w-6xl items-center justify-center px-4 py-10'>
+    <div class='w-full max-w-md'>
+      <!-- Brand -->
+      <div class='mb-6 flex items-center justify-center gap-3'>
+        <div class='relative h-11 w-11'>
+          <div class='absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 opacity-90'></div>
+          <div class='absolute inset-[2px] rounded-2xl bg-slate-950/60'></div>
+          <svg class='absolute inset-0 m-auto' width='26' height='26' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z' stroke='white' stroke-width='1.8' />
+            <path d='M8.5 12.2l2.2 2.2 4.8-5' stroke='#22c55e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' />
+          </svg>
+        </div>
+        <div class='text-xl font-semibold tracking-tight'>
+          <span class='text-cyan-300'>Zerofy</span><span class='text-white'>Drive</span>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class='rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl sm:p-8'>
+        <h1 class='text-2xl font-bold'>Welcome back</h1>
+        <p class='mt-2 text-sm text-white/70'>Login to access your secure cloud files.</p>
+
+        <form class='mt-6 space-y-4' autocomplete='off'>
+          <div>
+            <label class='text-sm text-white/80'>Email</label>
+            <input
+              type='email'
+              placeholder='you@example.com'
+              class='mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm outline-none placeholder:text-white/40 focus:border-cyan-400/60 focus:ring-2 focus:ring-cyan-400/20'
+              required
+            />
+          </div>
+
+          <div>
+            <label class='text-sm text-white/80'>Password</label>
+            <input
+              type='password'
+              placeholder='Enter your password'
+              class='mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm outline-none placeholder:text-white/40 focus:border-cyan-400/60 focus:ring-2 focus:ring-cyan-400/20'
+              required
+            />
+          </div>
+
+          <div class='flex items-center justify-between gap-3'>
+            <label class='flex items-center gap-2 text-sm text-white/70'>
+              <input type='checkbox' class='h-4 w-4 rounded border-white/20 bg-white/10 text-emerald-400 focus:ring-emerald-400/30' />
+              Remember me
+            </label>
+            <a href='#' class='text-sm text-cyan-300 hover:text-cyan-200'>Forgot password?</a>
+          </div>
+
+          <button
+            type='submit'
+            class='w-full rounded-2xl bg-emerald-400 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-300 transition'
+          >
+            Login
+          </button>
+
+          <div class='relative py-2'>
+            <div class='h-px w-full bg-white/10'></div>
+            <span class='absolute left-1/2 -translate-x-1/2 -top-1.5 bg-slate-950 px-3 text-xs text-white/50'>or</span>
+          </div>
+
+          <button
+            type='button'
+            class='w-full rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 transition'
+          >
+            Continue with Google
+          </button>
+
+          <p class='pt-2 text-center text-sm text-white/70'>
+            Don’t have an account?
+            <a href='signup.html' class='text-emerald-300 hover:text-emerald-200 font-semibold'>Create one</a>
+          </p>
+        </form>
+      </div>
+
+      <p class='mt-6 text-center text-xs text-white/40'>© <span id='year'></span> ZerofyDrive</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
